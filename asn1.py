@@ -21,26 +21,22 @@ def read_protein(fname):
         print("Error in opening file")
         exit(1)
     lst = list()
+    name = ''
+    c = fp.readline()
     while True:
-        name = ''
         seq = ''
-        c = fp.readline()
         if not c:
             break
-        elif c == '>':
-            name = name+c
+        elif c[0] == '>':
+            name = c.rstrip('\n')
             while True:
-                c = fp.read(1)
-                if c == '\n':
+                c = fp.readline()
+                if not c or c[0] == '>':
                     break
-                name = name+c
-            while True:
-                c = fp.read(1)
-                if c == '>':
-                    fp.seek((fp.tell() - 1), 0)
-                    break
-                seq = seq+c
+                else:
+                    seq = seq+c.rstrip('\n')
             lst.append(Protein(name, seq))
+            name = c
 
     return lst
 
@@ -55,7 +51,10 @@ def main():
         plist = read_protein(fname)
         l = len(plist)
         for i in range(0, l):
+            nm=plist[i].name
+            sq=plist[i].seq
             print(plist[i].name, plist[i].seq)
+           # k=input()
         exit(0)
 
 
