@@ -24,7 +24,7 @@ def read_protein(fname):
     while True:
         name = ''
         seq = ''
-        c = fp.read(1)
+        c = fp.readline()
         if not c:
             break
         elif c == '>':
