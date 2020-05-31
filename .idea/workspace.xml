@@ -19,24 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f6f93d-86af-4018-be06-84d7e80ffe8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aminoAcids.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geneticCode.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectClasses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asn1.py" beforeDir="false" afterPath="$PROJECT_DIR$/asn1.py" afterDir="false" />
+    <list default="true" id="e2f6f93d-86af-4018-be06-84d7e80ffe8c" name="Default Changelist" comment="database created, created input files for amino acids">
+      <change afterPath="$PROJECT_DIR$/SE_Report_Group9.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +49,15 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1cfbefoe3xTNOLDMrGjbKotZ4rJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -157,7 +147,7 @@
       <workItem from="1583509639326" duration="8882000" />
       <workItem from="1583534188150" duration="4681000" />
       <workItem from="1590922705345" duration="6447000" />
-      <workItem from="1590965700675" duration="599000" />
+      <workItem from="1590965700675" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="minor changes">
       <created>1583534290029</created>
@@ -173,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583536990639</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="database created, created input files for amino acids">
+      <created>1590966793922</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590966793922</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -204,7 +201,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="changed read by single character to readline" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed read by single character to readline" />
+    <MESSAGE value="database created, created input files for amino acids" />
+    <option name="LAST_COMMIT_MESSAGE" value="database created, created input files for amino acids" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
