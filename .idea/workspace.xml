@@ -50,6 +50,7 @@
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -147,7 +148,7 @@
       <workItem from="1583509639326" duration="8882000" />
       <workItem from="1583534188150" duration="4681000" />
       <workItem from="1590922705345" duration="6447000" />
-      <workItem from="1590965700675" duration="854000" />
+      <workItem from="1590965700675" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="minor changes">
       <created>1583534290029</created>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590966793922</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="database created, created input files for amino acids">
+      <created>1590966865773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590966865773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -223,10 +231,14 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state width="914" height="259" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1590931444027" />
-    <state x="464" y="190" width="992" height="733" key="SettingsEditor" timestamp="1590922993745">
+    <state x="464" y="190" width="992" height="733" key="SettingsEditor" timestamp="1590966921530">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="464" y="190" width="992" height="733" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1590922993745" />
+    <state x="464" y="190" width="992" height="733" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1590966921530" />
+    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1590966653053">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="555" y="291" width="800" height="531" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1590966653053" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SE$test.coverage" NAME="test Coverage Results" MODIFIED="1590927727181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
