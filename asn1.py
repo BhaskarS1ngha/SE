@@ -1,27 +1,7 @@
 import mysql.connector as mq
 from os.path import exists
 from sys import argv
-
-
-class Protein:
-    name = ''
-    seq = ''
-    err = 0
-
-    def __init__(self, nm, sec):
-        self.name = nm
-        self.seq = sec
-        self.err_check()
-
-    def err_check(self):
-        seq_length = len(self.seq)
-        if (seq_length % 3) == 0:
-            self.err = 0
-        else:
-            self.err = 1
-
-    def get_data(self):
-        return self.name, self.seq, self.err
+from projectClasses import Protein
 
 
 def read_protein(fname):
@@ -43,21 +23,25 @@ def read_protein(fname):
                 if not c or c[0] == '>':
                     break
                 else:
-                    seq = seq+c.rstrip('\n')
+                    seq = seq + c.rstrip('\n')
             lst.append(Protein(name, seq))
             name = c
 
     return lst
 
 
-def main():
-    mydb = mq.connect(host="localhost", user="root", passwd="L4qjg0ss", database="proteins")
+def push_to_db(val_list):
+    mydb = mq.connect(host="localhost", user="root", passwd="L4qjg0ss", database="SE")
     mycursor = mydb.cursor()
+    sql = "INSERT INTO proteins (name,sequence,error) VALUES (%s, %s, %s)"
 
-    mycursor.execute("SHOW TABLES")
+    mycursor.execute(sql, val_list)
+    mydb.commit()
+    mydb.close()
+    # print(mycursor.rowcount," was inserted.")
 
-    for x in mycursor:
-        print(x)
+
+def main():
     fname = argv[1]
     if not exists(fname):
         print("Error: File does not exist")
@@ -66,10 +50,14 @@ def main():
     else:
         plist = read_protein(fname)
         l = len(plist)
-        fr=open('out.txt', 'w')
+        # push_to_db(plist)
+        fr = open('out.txt', 'w')
         fr.write('name,sequence,error\n')
-        for i in range(0,l):
+        print("Creating Database And Writing to file out.txt")
+        for i in range(0, l):
+            push_to_db([plist[i].name, plist[i].seq, plist[i].err])
             fr.write('%s,%s,%s\n' % (plist[i].name, plist[i].seq, plist[i].err))
+        print("\nAll Operations Successful")
         exit(0)
 
 
