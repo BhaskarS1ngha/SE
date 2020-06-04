@@ -1,24 +1,22 @@
-
-phe uuu uuc
-leu uua uug cuu cuc cua cug
-ile auu auc aua
-met aug
-val guu guc gua gug
-ser ucu ucc uca ucg
-pro ccu ccc cca ccg
-thr acu acc aca acg
-ala gcu gcc gca gcg
-tyr uau uac
-stop uaa uag uga
-his cau cac
+phe ttt ttc
+leu tta ttg ctt ctc cta ctg
+ile att atc ata
+met atg
+val gtt gtc gta gtg
+ser tct tcc tca tcg
+pro cct ccc cca ccg
+thr act acc aca acg
+ala gct gcc gca gcg
+tyr tat tac
+stop taa tag tga
+his cat cac
 gin caa cag
-asn aau aac
+asn aat aac
 lys aaa aag
-asp gau gac
+asp gat gac
 glu gaa gag
-cys ugu ugc
-trp ugg
-arg cgu cgc cga cgg aga agg
-ser agu agc
-gly ggu ggc gga ggg
-
+cys tgt tgc
+trp tgg
+arg cgt cgc cga cgg aga agg
+ser agt agc
+gly ggt ggc gga ggg
